@@ -2,10 +2,10 @@
   "name": "proshop",
   "version": "1.0.0",
   "description": "",
-  "main": "Server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/Server",
+    "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
