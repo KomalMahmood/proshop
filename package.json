@@ -4,6 +4,10 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
