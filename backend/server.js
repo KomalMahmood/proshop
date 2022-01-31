@@ -12,6 +12,7 @@ import path from 'path';
 import uploadRoutes from "./routes/uploadRoutes.js";
 import morgan from 'morgan';
 
+
 connectDB();
 const app = express();
 
@@ -57,9 +58,15 @@ app.use('/uploads',express.static(path.join(__dirname, '/uploads')));
 app.use(notFound);
 app.use(errorHandler);
 
- const PORT = process.env.PORT || 5000;
+
+
+const app_port = 5000;
+const PORT = process.env.PORT || app_port;
 //displayed when server run in terminal
 app.listen(PORT,()=>{
     console.log(`Server is running in ${process.env.NODE_ENV} mode and on port ${PORT}`.yellow.bold);
 });
+
+
+
 
